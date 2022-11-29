@@ -16,6 +16,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.bamsong.app.core.ui.compose.SampleCard
 import com.bamsong.app.core.ui.theme.SampleApplicationTheme
 
 class MainActivity : ComponentActivity() {
@@ -36,25 +37,9 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Composable
-fun SampleCard(text: String,
-               color: Color = Color.Gray,
-               onClick: () -> Unit) {
-    Box(modifier = Modifier
-        .clickable(onClick = onClick)
-        .fillMaxSize()
-        .background(color),
-        contentAlignment = Alignment.Center
-    ) {
-        Text(
-            text = text
-        )
-    }
-}
-
 @Preview(showBackground = true)
 @Composable
-fun DefaultPreview() {
+fun MainPreview() {
     SampleApplicationTheme {
         SampleCard("메인 화면 입니다.") { }
     }
