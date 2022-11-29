@@ -1,4 +1,4 @@
-package com.bamsong.app.detail.ui.theme
+package com.bamsong.app.core.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
