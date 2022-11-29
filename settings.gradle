@@ -14,5 +14,8 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Sample Application"
 include ':app'
-include ':detail'
+include ':feature_detail'
 include ':core'
+include ':feature_search'
+include ':feature_detail2'
+include ':feature_detail3'

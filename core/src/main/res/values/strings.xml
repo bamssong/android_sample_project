@@ -2,4 +2,7 @@
 <resources>
     <string name="app_name">DFM 샘플</string>
     <string name="title_detail">Detail</string>
+    <string name="title_search">Search</string>
+    <string name="title_detail2">Detail2</string>
+    <string name="title_detail3">Detail3</string>
 </resources>
