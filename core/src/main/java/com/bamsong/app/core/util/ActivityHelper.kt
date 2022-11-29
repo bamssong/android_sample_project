@@ -26,9 +26,23 @@ object Activities {
         const val EXTRA_TAB_ID =  "tabId"
     }
 
-    object Detail: AddressableActivity {
-        override val className: String = "$PACKAGE_NAME.detail.DetailActivity"
+    object Detail {
         const val EXTRA_CONTENT_ID = "contentId"
         const val EXTRA_TOKEN_ID ="token_id"
+
+        object Default: AddressableActivity {
+            override val className: String = "$PACKAGE_NAME.detail.DetailActivity"
+        }
+        object Detail2: AddressableActivity {
+            override val className: String = "$PACKAGE_NAME.detail2.Detail2Activity"
+        }
+        object Detail3: AddressableActivity {
+            override val className: String = "$PACKAGE_NAME.detail3.Detail3Activity"
+        }
     }
+
+    object Search: AddressableActivity {
+        override val className: String = "$PACKAGE_NAME.search.SearchActivity"
+    }
+
 }
