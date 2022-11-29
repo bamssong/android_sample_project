@@ -8,6 +8,20 @@
         <dist:delivery>
             <dist:on-demand />
         </dist:delivery>
+
         <dist:fusing dist:include="true" />
     </dist:module>
+
+    <application>
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false"
+            android:label="@string/title_detail"
+            android:theme="@style/Theme.SampleApplication">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
 </manifest>
