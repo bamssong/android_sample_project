@@ -1,4 +1,4 @@
-package com.bamsong.detail.ui.theme
+package com.bamsong.app.detail.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

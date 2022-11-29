@@ -1,4 +1,4 @@
-package com.bamsong.detail
+package com.bamsong.app.detail
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.bamsong.detail.ui.theme.SampleApplicationTheme
+import com.bamsong.app.detail.ui.theme.SampleApplicationTheme
 
 class DetailActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

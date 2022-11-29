@@ -1,4 +1,4 @@
-package com.bamsong.detail
+package com.bamsong.app.detail
 
 import org.junit.Test
 

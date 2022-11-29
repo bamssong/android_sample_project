@@ -1,4 +1,4 @@
-package com.bamsong.sampleapplication.ui.theme
+package com.bamsong.app.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

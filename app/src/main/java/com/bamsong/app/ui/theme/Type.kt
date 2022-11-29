@@ -1,4 +1,4 @@
-package com.bamsong.sampleapplication.ui.theme
+package com.bamsong.app.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

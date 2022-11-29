@@ -1,4 +1,4 @@
-package com.bamsong.sampleapplication
+package com.bamsong.app
 
 import android.content.Intent
 import androidx.compose.ui.graphics.Color
@@ -16,7 +16,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.bamsong.sampleapplication.ui.theme.SampleApplicationTheme
+import com.bamsong.app.ui.theme.SampleApplicationTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

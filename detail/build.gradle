@@ -3,7 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 android {
-    namespace 'com.bamsong.detail'
+    namespace 'com.bamsong.app.detail'
     compileSdk 32
 
     defaultConfig {

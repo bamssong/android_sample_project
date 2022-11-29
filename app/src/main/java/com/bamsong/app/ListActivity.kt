@@ -1,8 +1,7 @@
-package com.bamsong.sampleapplication
+package com.bamsong.app
 
 import android.content.Intent
 import android.os.Bundle
-import android.provider.ContactsContract.Directory.PACKAGE_NAME
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -12,7 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import com.bamsong.sampleapplication.ui.theme.SampleApplicationTheme
+import com.bamsong.app.ui.theme.SampleApplicationTheme
 
 class ListActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,8 +26,8 @@ class ListActivity : ComponentActivity() {
                         //DFM activity 호출
                         val intent = Intent(Intent.ACTION_VIEW)
                             .setClassName(
-                                BuildConfig.APPLICATION_ID,
-                                "com.bamsong.detail.DetailActivity")
+                                "com.bamsong.app",
+                                "com.bamsong.app.detail.DetailActivity")
                         startActivity(intent)
                     }
                 }
