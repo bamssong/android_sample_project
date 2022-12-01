@@ -1,6 +1,7 @@
 package com.bamsong.app
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -13,6 +14,7 @@ import com.bamsong.app.core.ui.compose.SampleCard
 import com.bamsong.app.core.ui.theme.SampleApplicationTheme
 import com.bamsong.app.core.util.Activities
 import com.bamsong.app.core.util.intentTo
+import timber.log.Timber
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
