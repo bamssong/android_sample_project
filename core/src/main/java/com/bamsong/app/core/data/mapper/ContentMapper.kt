@@ -6,6 +6,8 @@ import com.bamsong.app.core.data.network.zoo.entity.ZooContent
 import com.bamsong.app.core.domain.entity.Content
 
 object ContentMapper {
+    fun emptyContent() = Content("", "", "", "")
+
     fun gitHubRepoToContent(githubRepo: GithubRepo) = Content(
         type = "git",
         id = githubRepo.id,

@@ -26,4 +26,7 @@ interface GitHubService {
 
     @GET("users/{user}/repos")
     fun listRepos(@Path("user") user: String?): Call<List<GithubRepo>>
+
+    @GET("users/{user}/repos") // for flow
+    suspend fun listReposFlow(@Path("user") user: String?): List<GithubRepo>
 }

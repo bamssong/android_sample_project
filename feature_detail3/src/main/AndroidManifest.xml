@@ -14,7 +14,7 @@
 
     <application>
         <activity
-            android:name=".Detail3Activity"
+            android:name=".ui.Detail3Activity"
             android:exported="false"
             android:theme="@style/Theme.SampleApplication">
             <meta-data

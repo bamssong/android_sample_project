@@ -34,10 +34,10 @@ object Activities {
             override val className: String = "$PACKAGE_NAME.detail.DetailActivity"
         }
         object Detail2: AddressableActivity {
-            override val className: String = "$PACKAGE_NAME.detail2.Detail2Activity"
+            override val className: String = "$PACKAGE_NAME.detail2.ui.Detail2Activity"
         }
         object Detail3: AddressableActivity {
-            override val className: String = "$PACKAGE_NAME.detail3.Detail3Activity"
+            override val className: String = "$PACKAGE_NAME.detail3.ui.Detail3Activity"
         }
     }
 

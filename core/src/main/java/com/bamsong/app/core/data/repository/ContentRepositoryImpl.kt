@@ -5,7 +5,6 @@ import com.bamsong.app.core.data.datasource.GitHubRemoteSource
 import com.bamsong.app.core.data.datasource.ZooRemoteSource
 import com.bamsong.app.core.data.mapper.ContentMapper
 import com.bamsong.app.core.domain.entity.Content
-import com.bamsong.app.core.domain.entity.emptyContent
 import com.bamsong.app.core.domain.repository.ContentRepository
 
 class ContentRepositoryImpl(
@@ -19,19 +18,19 @@ class ContentRepositoryImpl(
                 val response = gitHubRemoteSource.getContent(contentId)
                 response.getOrNull()?.run {
                     ContentMapper.gitHubRepoToContent(this)
-                } ?: emptyContent()
+                } ?: ContentMapper.emptyContent()
             }
             "bam" -> {
                 val response = bamRemoteSource.getContent(contentId)
                 response.getOrNull()?.run {
                     ContentMapper.bamContentToContent(this)
-                } ?: emptyContent()
+                } ?: ContentMapper.emptyContent()
             }
             "zoo" -> {
                 val response = zooRemoteSource.getContent(contentId)
                 response.getOrNull()?.run {
                     ContentMapper.zooContentToContent(this)
-                } ?: emptyContent()
+                } ?: ContentMapper.emptyContent()
             }
             else -> throw Throwable("not support type")
         }
